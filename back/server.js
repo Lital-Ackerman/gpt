@@ -4,11 +4,11 @@ const bodyParser = require('body-parser');
 const cors= require("cors");
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
-  apiKey: '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'
+  apiKey: '***'
 });
 const openai= new OpenAIApi(configuration);
 // const openai= new OpenAI({
-//   apiKey: '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'
+//   apiKey: '***'
 // })
 // Initialize Express.js
 const app = express();
@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 
 // Create an instance of the OpenAI API client
-// const openai = new OpenAI('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');
+// const openai = new OpenAI('***');
 
 // Define the API endpoint for GPT interaction
 // app.post('/api/gpt', async (req, res) => {
